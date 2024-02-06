@@ -1,11 +1,10 @@
-import Header from "../components/header"
+import Header from "../components/header/header"
 import "../scss/main.scss"
 
 function Home() {
     return (
         <>
             <Header />
-            <h1>Hello</h1>
         </>
     )
 }
