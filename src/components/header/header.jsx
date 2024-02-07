@@ -8,7 +8,7 @@ function Header() {
             <div className="logo-name">
                 <img className="logo-img" src={Logo} alt="logo antoni castagné" />
                 <p className="name">
-                    Antoni Casatgné
+                    Antoni Castagné
                 </p>
             </div>
             <nav>
