@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "image": "../assets/imgData/booki.png",
+        "image": "/imgData/booki.png",
         "title": "Booki",
         "description": "",
         "filtre": ["Tous", "Html/Css"],
@@ -11,7 +11,7 @@
     },
     {
         "id": "2",
-        "image": "../assets/imgData/ohmyfood.png",
+        "image": "/imgData/ohmyfood.png",
         "title": "Ohmyfood",
         "description": "",
         "filtre": ["Tous", "Html/Css"],
@@ -21,7 +21,7 @@
     },
     {
         "id": "3",
-        "image": "../assets/imgData/print-it.png",
+        "image": "/imgData/print-it.png",
         "title": "Print it!",
         "description": "",
         "filtre": ["Tous", "Javascript"],
@@ -31,7 +31,7 @@
     },
     {
         "id": "4",
-        "image": "../assets/imgData/sophie_bluel.png",
+        "image": "/imgData/sophie_bluel.png",
         "title": "Sophie Bluel, portfolio",
         "description": "",
         "filtre": ["Tous", "Javascript"],
@@ -41,7 +41,7 @@
     },
     {
         "id": "5",
-        "image": "../assets/imgData/kasa.webp",
+        "image": "/imgData/kasa.webp",
         "title": "Kasa",
         "description": "",
         "filtre": ["Tous", "React"],
@@ -51,7 +51,7 @@
     },
     {
         "id": "6",
-        "image": "../assets/imgData/nina_carducci.webp",
+        "image": "/imgData/nina_carducci.webp",
         "title": "Nina Carducci, portfolio",
         "description": "",
         "filtre": ["Tous", "SEO"],
@@ -61,7 +61,7 @@
     },
     {
         "id": "7",
-        "image": "../assets/imgData/724events.webp",
+        "image": "/imgData/724events.webp",
         "title": "724events",
         "description": "",
         "filtre": ["Tous", "Debug"],
@@ -71,7 +71,7 @@
     },
     {
         "id": "8",
-        "image": "../assets/imgData/argentbank.webp",
+        "image": "/imgData/argentbank.webp",
         "title": "ArgentBank",
         "description": "",
         "filtre": ["Tous", "React"],
