@@ -1,0 +1,69 @@
+@keyframes rotate {
+    0%{
+       transform: rotate(0deg);
+      }
+   100%{
+       transform: rotate(360deg);
+      }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #647BA5;
+
+    .social-network {
+        display: flex;
+        flex-direction: column;
+
+        .icon-social-network {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            transform: rotate(0deg);
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #09B8D9;
+
+            &:hover {
+                animation: rotate 1s ;
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        background: linear-gradient(to top, #1F1F2E, #666D82);
+        cursor: pointer;
+
+        .contact-text{ 
+            margin-right: 8px;
+        }
+
+        .contact-icon {
+            color: #09B8D9;
+            font-size: 20px;
+        }
+
+        &:hover {
+            background: linear-gradient(to bottom, #1F1F2E, #666D82);
+        }
+    }
+
+    .logo-img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 0px 5px;
+    }
+}
