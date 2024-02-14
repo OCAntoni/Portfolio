@@ -1,7 +1,8 @@
 
+
 function About() {
     return (
-        <>
+        < div id="about">
             <h2>
                 A Propos
             </h2>
@@ -20,7 +21,7 @@ function About() {
                     <button>Télécharger CV</button>
                 </a>
             </div>
-        </>
+        </div>
     )
 }
 

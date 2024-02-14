@@ -18,7 +18,7 @@ function Slider({images}) {
     }
 
     return (
-        <div className="news">
+        <div id="news">
             <h2>News</h2>
             <div className="slider-project">
                 <img className="img-slider" src={dataProjets[currentIndex-1].image} alt="" />

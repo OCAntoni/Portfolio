@@ -1,0 +1,54 @@
+[
+    {
+        "image": "/skillsImg/html5-original.svg",
+       "title": "HTML"
+    },
+    {
+       "image": "/skillsImg/css3-original.svg",
+       "title": "CSS"
+    },
+    {
+        "image": "/skillsImg/sass-original.svg",
+        "title": "SASS"
+     },
+     {
+        "image": "/skillsImg/javascript-original.svg",
+        "title": "Javascript"
+     },
+     {
+        "image": "/skillsImg/react-original.svg",
+        "title": "React"
+     },
+     {
+        "image": "/skillsImg/redux-original.svg",
+        "title": "Redux"
+     },
+     {
+        "image": "/skillsImg/npm-original-wordmark.svg",
+        "title": "Npm"
+     },
+     {
+        "image": "/skillsImg/nodejs-plain-wordmark.svg",
+        "title": "NodeJs"
+     },
+     {
+        "image": "/skillsImg/git-original.svg",
+        "title": "Git"
+     },
+     {
+        "image": "/skillsImg/github-original.svg",
+        "title": "GitHub"
+     },
+     {
+        "image": "/skillsImg/swagger-original.svg",
+        "title": "Swagger"
+     },
+     {
+        "image": "/skillsImg/vscode-original.svg",
+        "title": "VsCode"
+     },
+     {
+        "image": "/skillsImg/figma-original.svg",
+        "title": "Figma"
+     }
+]
