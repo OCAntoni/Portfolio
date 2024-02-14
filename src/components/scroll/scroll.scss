@@ -1,0 +1,26 @@
+.scroll-div {
+    
+    &.visible {
+        opacity: 1;
+    }
+
+    &.hidden {
+        opacity: 0;
+    }
+
+    #scroll {
+        font-size: 20px;
+        position: fixed;
+        right: 20px; 
+	    bottom: 20px;
+        background-color: #09B8D9;
+        padding: 10px;
+        border-radius: 50%;
+        transition: 0.2s;
+        cursor: pointer;
+    
+        &:hover {
+            font-size: 25px;
+        }
+    }
+}
