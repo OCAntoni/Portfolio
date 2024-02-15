@@ -28,11 +28,13 @@ footer {
         }
 
         .icon {
+            transition-property: transform;
+            transition: 1s;
             font-size: 40px;
             color: #09B8D9;
 
             &:hover {
-                animation: rotate 1s ;
+                transform: rotate(360deg);
             }
         }
     }
