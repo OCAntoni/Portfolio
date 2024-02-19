@@ -1,4 +1,11 @@
 #news {
+    background-color: #647BA5;
+    padding: 50px;
+    
+    .section-title {
+       text-align: left;
+        margin-bottom: 30px;
+    }
 
     .slider-project {
         display: flex;
@@ -11,26 +18,64 @@
             width: 80%;
             height: 100%;
             object-fit:cover;
+            border-radius: 5px;
         }
 
         .change-project {
             width: 80%;
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
 
-            .change {
+            .button-link {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
                 cursor: pointer;
-            }
-        
-            .hand-right {
-                position: absolute;
-                left: 10px;
+                background-color: #09B8D9;
+
+                .icon {
+                    margin-left: 8px;
+                }
             }
 
-            .hand-left {
-                position: absolute;
-                right: 10px;
+            .dots {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 5px;
+                margin-bottom: 25px;
+            }
+
+            .dot {
+                cursor: pointer;
+                margin-inline: 5px;
+                width: 13px;
+                height: 13px;
+                background-color: #ffffff00;
+                border: 3px solid #fff;
+                border-radius: 100%;
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+                background-color: black;
+                transition: 0.3s;
+
+                &:hover {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+
+            .active {
+                background-color: #09B8D9;
+                width: 18px;
+                height: 18px;
             }
         }
     }
