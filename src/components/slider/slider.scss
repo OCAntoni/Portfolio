@@ -1,5 +1,5 @@
 #news {
-    background-color: #647BA5;
+    background-color: #A6C9C8;
     padding: 50px;
     
     .section-title {
@@ -76,6 +76,35 @@
                 background-color: #09B8D9;
                 width: 18px;
                 height: 18px;
+            }
+        }
+
+    }
+
+    .play-stop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        gap: 10px;
+
+        .name-project {
+            display: flex;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        .icon {
+            font-size: 30px;
+            color: white;
+            transition: 0.3s;
+
+            &:hover {
+                color:#09B8D9;
+                font-size: 35px;
             }
         }
     }

@@ -4,7 +4,7 @@ function About() {
     return (
         < div id="about">
             <h2>
-                A Propos
+                A Propos de moi
             </h2>
             <p>
                 Durant mes précédentes expériences professionelles, j'ai eu l'opportunité d'explorer plusieurs dommaines. C'est ce qui me permet d'aborder chaque nouveau projet avec enthousiasme et compréhension, mais également d'une capacité d'écoute empathique et celle ci qui me permet de comprendre les besoins des autres.

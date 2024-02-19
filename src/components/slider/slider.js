@@ -3,6 +3,8 @@ import { useState, useEffect } from "react"
 import dataProjets from '../../data/data.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
+import { faCircleStop } from '@fortawesome/free-solid-svg-icons'
+import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 
 function Slider({images}) {
     const [currentIndex , setCurrentIndex]= useState(0);
@@ -27,7 +29,7 @@ function Slider({images}) {
     return (
         <div id="news">
             <h2 className="section-title">
-                Actualitées
+                Découvrez mes derniers projets
             </h2>
             <div className="slider-project">
                 <img className="img-slider" src={dataProjets[currentIndex].image} alt="" />
@@ -47,6 +49,13 @@ function Slider({images}) {
                             </div>
                         </div>
                     ):null }
+            </div>
+            <div className="play-stop">
+                <p className="name-project">
+                    {dataProjets[currentIndex].title}
+                </p>
+                <FontAwesomeIcon className="icon" icon={faCirclePlay} />
+                <FontAwesomeIcon className="icon" icon={faCircleStop} />
             </div>
         </div>
      );
