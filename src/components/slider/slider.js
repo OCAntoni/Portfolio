@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 import dataProjets from '../../data/data.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,15 +8,21 @@ import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 
 function Slider({images}) {
     const [currentIndex , setCurrentIndex]= useState(0);
-    
-    useEffect(() => {
-        const interval = setInterval(() => {
-            next();
-        }, 3000);
+    const [isPlaying, setIsPlaying] = useState(true);
+    const intervalRef = useRef(null); 
 
-        return () => clearInterval(interval);
+    useEffect(() => {
+        if (isPlaying) {
+            intervalRef.current = setInterval(() => {
+                next();
+            }, 3000);
+        } else {
+            clearInterval(intervalRef.current);
+        }
+    
+        return () => clearInterval(intervalRef.current);
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [currentIndex]);
+    }, [currentIndex, isPlaying]);
 
     function next() {
         setCurrentIndex((prevIndex) => (prevIndex === dataProjets.length - 1 ? 0 : prevIndex + 1));
@@ -24,6 +30,15 @@ function Slider({images}) {
 
     function goToProject(index) {
         setCurrentIndex(index); 
+    }
+
+    function togglePlay() {
+        setIsPlaying(true);
+    }
+
+    function togglePause() {
+        setIsPlaying(false);
+        console.log("test");
     }
 
     return (
@@ -50,12 +65,12 @@ function Slider({images}) {
                         </div>
                     ):null }
             </div>
-            <div className="play-stop">
+            <div className="play-stop" >
                 <p className="name-project">
                     {dataProjets[currentIndex].title}
                 </p>
-                <FontAwesomeIcon className="icon" icon={faCirclePlay} />
-                <FontAwesomeIcon className="icon" icon={faCircleStop} />
+                <FontAwesomeIcon className={`icon ${isPlaying ? "active-play" : ""}`} icon={faCirclePlay} onClick={togglePlay}  />
+                <FontAwesomeIcon className={`icon ${isPlaying ? "" : "active-stop"}`} icon={faCircleStop} onClick={togglePause} />
             </div>
         </div>
      );

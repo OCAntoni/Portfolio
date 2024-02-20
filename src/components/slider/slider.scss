@@ -19,6 +19,7 @@
             height: 100%;
             object-fit:cover;
             border-radius: 5px;
+            border: thick double #09B8D9 ;
         }
 
         .change-project {
@@ -101,11 +102,21 @@
             font-size: 30px;
             color: white;
             transition: 0.3s;
+            cursor: pointer;
 
             &:hover {
-                color:#09B8D9;
-                font-size: 35px;
+                font-size: 50x;
             }
+        }
+
+        .active-stop {
+            color: #778787;
+            font-size: 40px;
+        }
+
+        .active-play {
+            color: #09B8D9;
+            font-size: 40px;
         }
     }
 }
