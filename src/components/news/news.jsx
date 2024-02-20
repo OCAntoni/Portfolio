@@ -1,6 +1,6 @@
 import Slider from '../slider/slider'
 
-function Project() {
+function News() {
     
 
     return (
@@ -10,4 +10,4 @@ function Project() {
     )
 }
 
-export default Project
+export default News
