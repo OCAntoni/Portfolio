@@ -2,6 +2,15 @@ import Logo from "../../assets/images/logo2.png"
 import BannerImg from "../../assets/images/winter_moutain_day1.jpg"
 
 function Header() {
+
+    function toggleMenu() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        menuToggle.classList.toggle('menu-open');
+    
+        const nav = document.querySelector('.list-sections');
+        nav.classList.toggle('show');
+    }
+    
     return (
         <>
         <header>
@@ -12,6 +21,11 @@ function Header() {
                 </h1>
             </div>
             <nav>
+                <button className="menu-toggle" onClick={toggleMenu}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                </button>
                 <ul className="list-sections">
                     <li>Accueil</li>
                     <a href="#news">

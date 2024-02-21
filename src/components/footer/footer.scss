@@ -45,20 +45,20 @@ footer {
         border: none;
         padding: 15px;
         border-radius: 10px;
-        background: linear-gradient(to top, #1F1F2E, #666D82);
+        background: #09B8D9;
         cursor: pointer;
+        transition: 0.3s;
 
         .contact-text{ 
             margin-right: 8px;
         }
 
         .contact-icon {
-            color: #09B8D9;
             font-size: 20px;
         }
 
         &:hover {
-            background: linear-gradient(to bottom, #1F1F2E, #666D82);
+            background-color: #06a5c7;
         }
     }
 

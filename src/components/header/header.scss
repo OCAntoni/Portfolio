@@ -18,18 +18,49 @@ header {
             object-fit: cover;
             border-radius: 5px 0px;
         }
+
+        .name {
+            @media screen and (max-width: 500px) {
+                display: none;
+            }
+            
+        }
     }
+
+    .menu-toggle {
+        display: none; 
+        background: none;
+        border: none;
+        cursor: pointer;
+        @media screen and (max-width: 980px) {
+                display: block;
+        }
+
+            .bar {
+                display: none;
+                width: 25px;
+                height: 3px;
+                background-color: #333;
+                margin: 5px 0;
+                @media screen and (max-width: 980px) {
+                    display: block;
+                }
+            }
+        }
 
     .list-sections {
         display: flex;
         flex-direction: row;
         gap: 15px;
+        @media screen and (max-width: 980px) {
+                display: none;
+            }
+        }
 
         li:hover {
             text-decoration: overline #09B8D9;
         }
     }
-}
 
 .banner {
     width: 100%;

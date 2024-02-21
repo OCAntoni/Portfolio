@@ -5,6 +5,9 @@
     .section-title {
        text-align: left;
         margin-bottom: 50px;
+        @media screen and (max-width: 980px) {
+            text-align: center;
+        }
     }
 
     .slider-project {

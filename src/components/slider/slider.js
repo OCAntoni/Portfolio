@@ -50,10 +50,12 @@ function Slider({images}) {
                 <img className="img-slider" src={dataProjets[currentIndex].image} alt="" />
                     {dataProjets.length > 1 ? (
                         <div className="change-project">
-                            <button className="button-link">
-                                En savoir plus
-                                <FontAwesomeIcon className="icon" icon={faArrowRightLong} />
-                            </button>
+                            <a href="#works">
+                                <button className="button-link">
+                                    En savoir plus
+                                    <FontAwesomeIcon className="icon" icon={faArrowRightLong} />
+                                </button>
+                            </a>
                             <div className="dots">
                                 {dataProjets.map((projet, index) => (
                                 <div key={index} 
