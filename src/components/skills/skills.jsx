@@ -3,11 +3,11 @@ import dataSkills from '../../data/skills.json'
 function Skills() {
 
     return (
-        <>
+        <section id="skills">
             <h3>
                 Mes compétences
             </h3>
-            <div id="skills">
+            <div className="skills">
                 {dataSkills.map((skill,index) => (
                     <div key={index}>
                         <img 
@@ -21,7 +21,37 @@ function Skills() {
                     </div>
                 ))}
             </div>
-        </>
+            <div className='quality-lists'>
+                    <ul className='list'>
+                        <li>
+                            <span className='dot'></span>
+                            Référencement naturel
+                        </li>
+                        <li>
+                            <span className='dot'></span>
+                            Green code
+                        </li>
+                        <li>
+                            <span className='dot'></span>
+                            Accessibilité
+                        </li>
+                    </ul>
+                    <ul className='list'>
+                        <li>
+                            <span className='dot'></span>
+                            Autonome
+                        </li>
+                        <li>
+                            <span className='dot'></span>
+                            consciencieux
+                        </li>
+                        <li>
+                            <span className='dot'></span>
+                            Empathique
+                        </li>
+                    </ul>
+                </div>
+        </section>
     )
 }
 

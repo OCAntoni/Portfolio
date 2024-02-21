@@ -42,7 +42,7 @@ function Slider({images}) {
     }
 
     return (
-        <div id="news">
+        <section id="news">
             <h2 className="section-title">
                 Découvrez mes derniers projets
             </h2>
@@ -72,7 +72,7 @@ function Slider({images}) {
                 <FontAwesomeIcon className={`icon ${isPlaying ? "active-play" : ""}`} icon={faCirclePlay} onClick={togglePlay}  />
                 <FontAwesomeIcon className={`icon ${isPlaying ? "" : "active-stop"}`} icon={faCircleStop} onClick={togglePause} />
             </div>
-        </div>
+        </section>
      );
 }
 

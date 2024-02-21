@@ -14,10 +14,18 @@ function Header() {
             <nav>
                 <ul className="list-sections">
                     <li>Accueil</li>
-                    <li>News</li>
-                    <li>A propos</li>
-                    <li>Compétences</li>
-                    <li>Mes projets</li>
+                    <a href="#news">
+                        <li>News</li>
+                    </a>
+                    <a href="#about">
+                        <li>A propos</li>
+                    </a>
+                    <a href="#skills">
+                        <li>Compétences</li>
+                    </a>
+                    <a href="#works">
+                        <li>Mes projets</li>
+                    </a>
                     <li>Contact</li>
                 </ul>
             </nav>

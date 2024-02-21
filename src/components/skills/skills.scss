@@ -1,12 +1,47 @@
 #skills {
-    padding: 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
     background-color: #A6C9C8;
+    padding: 50px;
 
-    .skills-logo {
-        width: 50px;
-        height: 50px;
+    h3 {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+        .skills-logo {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .quality-lists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin-top: 40px;
+
+        .list {
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 15px;
+
+                .dot {
+                    margin-inline: 5px;
+                    width: 13px;
+                    height: 13px;
+                    background-color:  #09B8D9;
+                    border-radius: 100%;
+                    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
     }
 }

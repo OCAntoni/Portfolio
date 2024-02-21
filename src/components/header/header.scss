@@ -24,6 +24,10 @@ header {
         display: flex;
         flex-direction: row;
         gap: 15px;
+
+        li:hover {
+            text-decoration: overline #09B8D9;
+        }
     }
 }
 
