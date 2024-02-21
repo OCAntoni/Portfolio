@@ -27,7 +27,7 @@ function Header() {
                     <div className="bar"></div>
                 </button>
                 <ul className="list-sections">
-                    <li>Accueil</li>
+                    <li className="overline">Accueil</li>
                     <a href="#news">
                         <li>News</li>
                     </a>
