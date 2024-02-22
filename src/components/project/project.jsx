@@ -1,16 +1,37 @@
+import React, { useState } from 'react';
 import dataProjets from '../../data/data.json'
 
 function Project() {
+    const [filteredProjects, setFilteredProjects] = useState(dataProjets);
+    const [selectedFilter, setSelectedFilter] = useState('Tous');
+
+    const filterProjects = (filter) => {
+        setSelectedFilter(filter);
+        if (filter === 'Tous') {
+            setFilteredProjects(dataProjets); 
+        } else {
+            const filtered = dataProjets.filter(project => project.filtre.includes(filter));
+            setFilteredProjects(filtered);
+        }
+    };
+
     return (
         <section id="works">
             <h3>
                 Mes projets
             </h3>
+            <div className='filters'>
+                <button className={`filter-button ${selectedFilter === 'Tous' ? 'active-color' : ''}`} onClick={() => filterProjects('Tous')}>Tous</button>
+                <button className={`filter-button ${selectedFilter === 'Html/Css' ? 'active-color' : ''}`} onClick={() => filterProjects('Html/Css')}>HTML/CSS</button>
+                <button className={`filter-button ${selectedFilter === 'Javascript' ? 'active-color' : ''}`} onClick={() => filterProjects('Javascript')}>Javascript</button>
+                <button className={`filter-button ${selectedFilter === 'React' ? 'active-color' : ''}`} onClick={() => filterProjects('React')}>React</button>
+                <button className={`filter-button ${selectedFilter === 'SEO' ? 'active-color' : ''}`} onClick={() => filterProjects('SEO')}>SEO</button>
+                <button className={`filter-button ${selectedFilter === 'Debug' ? 'active-color' : ''}`} onClick={() => filterProjects('Debug')}>Debug</button>
+            </div>
             <div className="works-container">
-                {dataProjets.map((project, index) => {
-                    return (
+                {filteredProjects.map((project, index) => (
                         <div className="work" key={index}>
-                            <div className='test'>
+                            <div className='work-img-hover'>
                                 <div className="link-container">
                                     <a href={project.urlCode} target='_blank' rel="noreferrer" >
                                         Voir le code 
@@ -35,14 +56,15 @@ function Project() {
                                     {project.description}
                                 </p>
                                 <div className='tags'>
-                                    <p className='tag'>
-                                        {project.tag}
-                                    </p>
+                                    {project.tag.map((tag, index) => (
+                                        <p className='tag' key={index}>
+                                            {tag}
+                                        </p>
+                                    ))}
                                 </div>
                             </div>
                         </div>
-                    );
-                })}
+                ))}
             </div>
         </section>
     );
