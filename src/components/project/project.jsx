@@ -10,21 +10,23 @@ function Project() {
                 {dataProjets.map((project, index) => {
                     return (
                         <div className="work" key={index}>
-                            <div className="link-container">
-                                <a href={project.urlCode} target='_blank' rel="noreferrer" >
-                                    Voir le code 
-                                </a>
-                                {project.urlWebsite && (
-                                    <a href={project.urlWebsite} target='_blank' rel="noreferrer" >
-                                        Voir la page 
+                            <div className='test'>
+                                <div className="link-container">
+                                    <a href={project.urlCode} target='_blank' rel="noreferrer" >
+                                        Voir le code 
                                     </a>
-                                )}
+                                    {project.urlWebsite && (
+                                        <a href={project.urlWebsite} target='_blank' rel="noreferrer" >
+                                            Voir la page 
+                                        </a>
+                                    )}
+                                </div>
+                                <img 
+                                    className="work-img"
+                                    src={project.image} 
+                                    alt={`Projet ${project.title}`}   
+                                />
                             </div>
-                            <img 
-                                className="work-img"
-                                src={project.image} 
-                                alt={`Projet ${project.title}`}   
-                            />
                             <div className='work-info'>
                                 <h4>
                                     {project.title}

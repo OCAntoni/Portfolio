@@ -71,8 +71,14 @@ function Slider({images}) {
                 <p className="name-project">
                     {dataProjets[currentIndex].title}
                 </p>
-                <FontAwesomeIcon className={`icon ${isPlaying ? "active-play" : ""}`} icon={faCirclePlay} onClick={togglePlay}  />
-                <FontAwesomeIcon className={`icon ${isPlaying ? "" : "active-stop"}`} icon={faCircleStop} onClick={togglePause} />
+                <div className="icons">
+                    <FontAwesomeIcon className={`icon ${isPlaying ? "active-play" : ""}`} icon={faCirclePlay} onClick={togglePlay}  />
+                    <FontAwesomeIcon className={`icon ${isPlaying ? "" : "active-stop"}`} icon={faCircleStop} onClick={togglePause} />
+                </div>
+                <button className="button-link-mobile">
+                    En savoir plus
+                    <FontAwesomeIcon className="icon" icon={faArrowRightLong} />
+                </button>
             </div>
         </section>
      );

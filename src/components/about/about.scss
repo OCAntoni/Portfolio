@@ -5,12 +5,19 @@
         text-align: right;
         margin-right: 50px;
         margin-bottom: 50px;
+        @media screen and (max-width: 980px) {
+            text-align: center;
+        }
     }
 
     .about {
         display: flex;
         flex-direction: row;
         gap: 30px;
+        @media screen and (max-width: 980px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         .img-about {
             width: 400px;
