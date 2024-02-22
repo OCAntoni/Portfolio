@@ -12,15 +12,18 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 50px;
     background-color: #A6C9C8;
+    @media screen and (max-width: 980px) {
+        flex-direction: column;
+        gap: 30px;
+    }
 
     .social-network {
         display: flex;
         flex-direction: column;
 
         .icon-social-network {
-            margin-top: 20px;
             display: flex;
             gap: 20px;
             justify-content: center;
@@ -67,5 +70,11 @@ footer {
         height: 100px;
         object-fit: cover;
         border-radius: 0px 5px;
+    }
+
+    p {
+        @media screen and (max-width: 980px) {
+            text-align: center;
+        }
     }
 }

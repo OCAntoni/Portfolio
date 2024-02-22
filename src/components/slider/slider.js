@@ -38,7 +38,6 @@ function Slider({images}) {
 
     function togglePause() {
         setIsPlaying(false);
-        console.log("test");
     }
 
     return (
@@ -77,7 +76,7 @@ function Slider({images}) {
                 </div>
                 <button className="button-link-mobile">
                     En savoir plus
-                    <FontAwesomeIcon className="icon" icon={faArrowRightLong} />
+                    <FontAwesomeIcon className="icon-mobile" icon={faArrowRightLong} />
                 </button>
             </div>
         </section>

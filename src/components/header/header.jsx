@@ -1,7 +1,10 @@
+import React, { useState } from 'react';
+
 import Logo from "../../assets/images/logo2.png"
 import BannerImg from "../../assets/images/winter_moutain_day1.jpg"
 
 function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     function toggleMenu() {
         const menuToggle = document.querySelector('.menu-toggle');
@@ -9,6 +12,10 @@ function Header() {
     
         const nav = document.querySelector('.list-sections');
         nav.classList.toggle('show');
+    }
+
+    function closeMenu() {
+        setIsMenuOpen(false);
     }
     
     return (
@@ -28,7 +35,7 @@ function Header() {
                 </button>
                 <ul className="list-sections">
                     <li className="overline">Accueil</li>
-                    <a href="#news">
+                    <a href="#news" onClick={closeMenu}>
                         <li>News</li>
                     </a>
                     <a href="#about">
@@ -40,7 +47,9 @@ function Header() {
                     <a href="#works">
                         <li>Mes projets</li>
                     </a>
-                    <li>Contact</li>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
                 </ul>
             </nav>
         </header>

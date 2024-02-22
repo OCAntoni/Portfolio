@@ -17,9 +17,9 @@ function Footer() {
     }
 
     return (
-        <footer>
+        <footer id="contact">
+            <h4>Retrouvez moi sur</h4>
             <div className="social-network">
-                <h4>Retrouvez moi sur</h4>
                 <div className="icon-social-network">
                     <NavLink to={url1} target="_blank">
                         <FontAwesomeIcon className="icon" icon={faGithub} />

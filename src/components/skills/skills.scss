@@ -1,10 +1,16 @@
 #skills {
     background-color: #A6C9C8;
     padding: 50px;
+    @media screen and (max-width: 980px) {
+        padding: 30px;
+    }
 
     h3 {
         text-align: left;
         margin-bottom: 50px;
+        @media screen and (max-width: 980px) {
+            text-align: center;
+        }
     }
 
     .skills {
@@ -12,6 +18,11 @@
         flex-direction: row;
         justify-content: space-around;
         text-align: center;
+        @media screen and (max-width: 980px) {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 40px;
+        }
     
         .skills-logo {
             width: 50px;
@@ -26,6 +37,9 @@
         text-align: center;
         gap: 30px;
         margin-top: 40px;
+        @media screen and (max-width: 980px) {
+            flex-direction: column;
+        }
 
         .list {
 

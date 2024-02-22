@@ -28,12 +28,17 @@ function Project() {
                                 />
                             </div>
                             <div className='work-info'>
-                                <h4>
+                                <h4 className='info-title'>
                                     {project.title}
                                 </h4>
-                                <p>
+                                <p className='info-text' style={{ lineHeight: '1.5' }}>
                                     {project.description}
                                 </p>
+                                <div className='tags'>
+                                    <p className='tag'>
+                                        {project.tag}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     );

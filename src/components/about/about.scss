@@ -1,5 +1,8 @@
 #about {
-    padding: 60px;
+    padding: 50px;
+    @media screen and (max-width: 980px) {
+        padding: 30px;
+    }
 
     h2 {
         text-align: right;
