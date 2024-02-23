@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "image": "/imgData/booki.png",
+        "image": "/imgData/booki.webp",
         "title": "Booki",
         "description": "Entreprise souhaitant développer un site internet permettant aux utilisateurs des hébergements ainsi que des activités dans la ville de leur choix. J'ai donc intégré l'interface du site depuis une maquette figma. Le site est commandé en desktop first, et la partie responsive a été travaillée dans un second temps.",
         "filtre": ["Tous", "Html/Css"],
@@ -11,7 +11,7 @@
     },
     {
         "id": "2",
-        "image": "/imgData/ohmyfood.png",
+        "image": "/imgData/ohmyfood.webp",
         "title": "Ohmyfood",
         "description": "Jeune startup dans le domaine de la restauration, ohmyfood était dans le besoin d'un site internet qui répertorie des restaurants gastronomiques. J'ai été en charge du développement de celui ci en mobile first, mais aussi de l'intégration des animations en SCSS.",
         "filtre": ["Tous", "Html/Css"],
@@ -21,7 +21,7 @@
     },
     {
         "id": "3",
-        "image": "/imgData/print-it.png",
+        "image": "/imgData/slide3.webp",
         "title": "Print it!",
         "description": "Print it est une entreprise d'imprimerie qui disposait déjà d'un site internet en single page, et qui souhaitait dynamiser ce dernier. J'ai donc travaillé sur l'ajout d'un diaporama d'images en utilisant principalement javascript.",
         "filtre": ["Tous", "Javascript"],
@@ -31,7 +31,7 @@
     },
     {
         "id": "4",
-        "image": "/imgData/sophie_bluel.png",
+        "image": "/imgData/sophie-bluel.webp",
         "title": "Sophie Bluel, portfolio",
         "description": "Sophie Bluel est une architecte d'intérieur souhaitant un site portfolio. Sur ce projet entre autre, il y a eu le développement front end, la gestion de connexion administrateur, le filtre et le tri de données, ainsi que la communication avec une API pour supprimer ou ajouter des projets de travail.",
         "filtre": ["Tous", "Javascript"],
@@ -51,7 +51,7 @@
     },
     {
         "id": "6",
-        "image": "/imgData/nina_carducci.png",
+        "image": "/imgData/nina_carducci.webp",
         "title": "Nina Carducci, portfolio",
         "description": "Travail d'optimisation pour ce site qui nécessitait une refonte afin d'optimiser la visilité, la performance, ainsi qu'un meilleur référencement. A présent le site de Nina est optimisé afin d'améliorer sa présence en ligne, à attirer plus de trafic vers son site, et donc à mettre en valeur son travail.",
         "filtre": ["Tous", "SEO"],
@@ -61,7 +61,7 @@
     },
     {
         "id": "7",
-        "image": "/imgData/724events.png",
+        "image": "/imgData/724events.webp",
         "title": "724events",
         "description": "Agence évènementielle, 724events possédait un site avec de nombreux problèmes majeurs. J'ai donc été en charge de la partie de résolutions de bugs, traiter les tests unitaires et fonctionnels ainsi que la rédaction d'un cahier de recette pour le client.",
         "filtre": ["Tous", "Debug"],
