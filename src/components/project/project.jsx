@@ -28,6 +28,17 @@ function Project() {
                 <button className={`filter-button ${selectedFilter === 'SEO' ? 'active-color' : ''}`} onClick={() => filterProjects('SEO')}>SEO</button>
                 <button className={`filter-button ${selectedFilter === 'Debug' ? 'active-color' : ''}`} onClick={() => filterProjects('Debug')}>Debug</button>
             </div>
+            <div className='filters-mobile'>
+                <label htmlFor="filters-select">Choix des catégories</label>
+                <select name="filters" id="filters-select" onChange={(e) => filterProjects(e.target.value)}>
+                    <option value="Tous" className={`filter-button ${selectedFilter === 'Html/Css' ? 'active-color' : ''}`}>Tous</option>
+                    <option value="Html/Css" className={`filter-button ${selectedFilter === 'Html/Css' ? 'active-color' : ''}`}>HTML/CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="React">React</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Debug">Debug</option>
+                </select>
+            </div>
             <div className="works-container">
                 {filteredProjects.map((project, index) => (
                         <div className="work" key={index}>

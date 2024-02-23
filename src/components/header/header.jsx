@@ -7,11 +7,7 @@ function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     function toggleMenu() {
-        const menuToggle = document.querySelector('.menu-toggle');
-        menuToggle.classList.toggle('menu-open');
-    
-        const nav = document.querySelector('.list-sections');
-        nav.classList.toggle('show');
+        setIsMenuOpen(!isMenuOpen);
     }
 
     function closeMenu() {
@@ -20,7 +16,7 @@ function Header() {
     
     return (
         <>
-        <header>
+        <header id='home'>
             <div className="logo-name">
                 <img className="logo-img" src={Logo} alt="logo antoni castagné" />
                 <h1 className="name">
@@ -33,21 +29,23 @@ function Header() {
                     <div className="bar"></div>
                     <div className="bar"></div>
                 </button>
-                <ul className="list-sections">
-                    <li className="overline">Accueil</li>
+                <ul className={`list-sections ${isMenuOpen ? 'show' : ''}`}>
+                    <a href="#home" onClick={closeMenu}>
+                        <li className="overline">Accueil</li>
+                    </a>
                     <a href="#news" onClick={closeMenu}>
                         <li>News</li>
                     </a>
-                    <a href="#about">
+                    <a href="#about" onClick={closeMenu}>
                         <li>A propos</li>
                     </a>
-                    <a href="#skills">
+                    <a href="#skills" onClick={closeMenu}>
                         <li>Compétences</li>
                     </a>
-                    <a href="#works">
+                    <a href="#works" onClick={closeMenu}>
                         <li>Mes projets</li>
                     </a>
-                    <a href="#contact">
+                    <a href="#contact" onClick={closeMenu}>
                         <li>Contact</li>
                     </a>
                 </ul>
