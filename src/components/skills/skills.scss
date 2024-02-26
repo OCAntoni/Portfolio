@@ -1,3 +1,12 @@
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
 #skills {
     background-color: #A6C9C8;
     padding: 50px;
@@ -18,6 +27,9 @@
         flex-direction: row;
         justify-content: space-around;
         text-align: center;
+        overflow: hidden; 
+        position: relative;
+        animation: scroll 10s linear infinite;
         @media screen and (max-width: 980px) {
             display: grid;
             grid-template-columns: repeat(3,1fr);
