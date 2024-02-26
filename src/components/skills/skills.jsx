@@ -4,9 +4,9 @@ function Skills() {
 
     return (
         <section id="skills">
-            <h3>
+            <h2 className='section-title'>
                 Mes compétences
-            </h3>
+            </h2>
             <div className="skills">
                 {dataSkills.map((skill,index) => (
                     <div key={index}>

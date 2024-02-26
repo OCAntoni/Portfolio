@@ -46,10 +46,10 @@ function Slider({images}) {
                 Découvrez mes derniers projets
             </h2>
             <div className="slider-project">
-                <img className="img-slider" src={dataProjets[currentIndex].image} alt="" />
+                <img className="img-slider" src={dataProjets[currentIndex].image} alt={`projet ${dataProjets[currentIndex].title}`} />
                     {dataProjets.length > 1 ? (
                         <div className="change-project">
-                            <a href="#works">
+                            <a href="#works" title="lien vers la section de tous les projets détaillés">
                                 <button className="button-link">
                                     En savoir plus
                                     <FontAwesomeIcon className="icon" icon={faArrowRightLong} />

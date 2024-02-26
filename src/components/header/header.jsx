@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Logo from "../../assets/images/logo2.png"
-import BannerImg from "../../assets/images/winter_moutain_day1.jpg"
+import Logo from "../../assets/images/logo2.webp"
+import BannerImg from "../../assets/images/winter_moutain_day2.webp"
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ function Header() {
                 </h1>
             </div>
             <nav>
-                <button className="menu-toggle" onClick={toggleMenu}>
+                <button className="menu-toggle" onClick={toggleMenu} aria-label="menu déroulant mobile">
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
@@ -52,7 +52,7 @@ function Header() {
             </nav>
         </header>
         <div className="banner">
-          <img className="banner-img" src={BannerImg} alt="paysage d'une router vers une montagne enneiger" />
+          <img className="banner-img" src={BannerImg} alt="paysage d'une route vers une montagne enneiger" />
       </div>
       </>
     )

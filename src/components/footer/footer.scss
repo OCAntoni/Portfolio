@@ -32,12 +32,14 @@ footer {
 
         .icon {
             transition-property: transform;
-            transition: 1s;
+            transition: 0.7s;
             font-size: 40px;
             color: #09B8D9;
 
             &:hover {
                 transform: rotate(360deg);
+                color : #06a5c7;
+                font-size: 45px;
             }
         }
     }

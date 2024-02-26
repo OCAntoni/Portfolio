@@ -10,7 +10,7 @@ function About() {
                 <img 
                     className="img-about"
                     src={Img}  
-                    alt="prairie avec une montagne en fond"
+                    alt="prairie avec une montagne enneieger en fond"
                 />
                 <div className="text-about" style={{ lineHeight: '1.5' }}>
                     <p>

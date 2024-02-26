@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import dataProjets from '../../data/data.json'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+
 function Project() {
     const [filteredProjects, setFilteredProjects] = useState(dataProjets);
     const [selectedFilter, setSelectedFilter] = useState('Tous');
@@ -17,9 +21,9 @@ function Project() {
 
     return (
         <section id="works">
-            <h3>
+            <h2>
                 Mes projets
-            </h3>
+            </h2>
             <div className='filters'>
                 <button className={`filter-button ${selectedFilter === 'Tous' ? 'active-color' : ''}`} onClick={() => filterProjects('Tous')}>Tous</button>
                 <button className={`filter-button ${selectedFilter === 'Html/Css' ? 'active-color' : ''}`} onClick={() => filterProjects('Html/Css')}>HTML/CSS</button>
@@ -45,11 +49,13 @@ function Project() {
                             <div className='work-img-hover'>
                                 <div className="link-container">
                                     <a href={project.urlCode} target='_blank' rel="noreferrer" >
-                                        Voir le code 
+                                        Voir le code
+                                        <FontAwesomeIcon className='fa' icon={faGithub} />
                                     </a>
                                     {project.urlWebsite && (
                                         <a href={project.urlWebsite} target='_blank' rel="noreferrer" >
                                             Voir la page 
+                                            <FontAwesomeIcon className='fa' icon={faGlobe} />
                                         </a>
                                     )}
                                 </div>
@@ -60,9 +66,9 @@ function Project() {
                                 />
                             </div>
                             <div className='work-info'>
-                                <h4 className='info-title'>
+                                <h3 className='info-title'>
                                     {project.title}
-                                </h4>
+                                </h3>
                                 <p className='info-text' style={{ lineHeight: '1.5' }}>
                                     {project.description}
                                 </p>

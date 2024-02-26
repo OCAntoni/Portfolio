@@ -1,3 +1,12 @@
+@keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
 #news {
     background-color: #A6C9C8;
     padding: 50px;

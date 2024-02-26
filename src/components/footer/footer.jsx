@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-import Logo from "../../assets/images/logo2.png"
+import Logo from "../../assets/images/logo2.webp"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -21,10 +21,10 @@ function Footer() {
             <h4>Retrouvez moi sur</h4>
             <div className="social-network">
                 <div className="icon-social-network">
-                    <NavLink to={url1} target="_blank">
+                    <NavLink to={url1} target="_blank" title="lien vers le profil github">
                         <FontAwesomeIcon className="icon" icon={faGithub} />
                     </NavLink>
-                    <NavLink to={url2} target="_blank">
+                    <NavLink to={url2} target="_blank" title="lien vers le profil linkedin">
                         <FontAwesomeIcon className="icon" icon={faLinkedin} />
                     </NavLink>
                 </div>
