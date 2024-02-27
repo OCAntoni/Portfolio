@@ -1,14 +1,14 @@
-import { useState, useEffect, useRef } from "react"
-
-import dataProjets from '../../data/data.json'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
-import { faCircleStop } from '@fortawesome/free-solid-svg-icons'
-import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
+import { useState, useEffect, useRef } from "react";
+import dataProjets from '../../data/data.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import { faCircleStop } from '@fortawesome/free-solid-svg-icons';
+import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 
 function Slider({images}) {
-    const [currentIndex , setCurrentIndex]= useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(true);
+    const reversedDataProjets = [...dataProjets].reverse().slice(0, 5);
     const intervalRef = useRef(null); 
 
     useEffect(() => {
@@ -25,7 +25,7 @@ function Slider({images}) {
     }, [currentIndex, isPlaying]);
 
     function next() {
-        setCurrentIndex((prevIndex) => (prevIndex === dataProjets.length - 1 ? 0 : prevIndex + 1));
+        setCurrentIndex((prevIndex) => (prevIndex === reversedDataProjets.length - 1 ? 0 : prevIndex + 1));
     }
 
     function goToProject(index) {
@@ -46,8 +46,8 @@ function Slider({images}) {
                 Découvrez mes derniers projets
             </h2>
             <div className="slider-project">
-                <img className="img-slider" src={dataProjets[currentIndex].image} alt={`projet ${dataProjets[currentIndex].title}`} />
-                    {dataProjets.length > 1 ? (
+                <img className="img-slider" src={reversedDataProjets[currentIndex].image} alt={`projet ${reversedDataProjets[currentIndex].title}`} />
+                    {reversedDataProjets.length > 1 ? (
                         <div className="change-project">
                             <a href="#works" title="lien vers la section de tous les projets détaillés">
                                 <button className="button-link">
@@ -56,7 +56,7 @@ function Slider({images}) {
                                 </button>
                             </a>
                             <div className="dots">
-                                {dataProjets.map((projet, index) => (
+                                {reversedDataProjets.map((projet, index) => (
                                 <div key={index} 
                                     className={index === currentIndex ? "dot active" : "dot"}
                                     onClick={() => goToProject(index)}>
@@ -68,7 +68,7 @@ function Slider({images}) {
             </div>
             <div className="play-stop" >
                 <p className="name-project">
-                    {dataProjets[currentIndex].title}
+                    {reversedDataProjets[currentIndex].title}
                 </p>
                 <div className="icons">
                     <FontAwesomeIcon className={`icon ${isPlaying ? "active-play" : ""}`} icon={faCirclePlay} onClick={togglePlay}  />
@@ -83,4 +83,4 @@ function Slider({images}) {
      );
 }
 
-export default Slider
+export default Slider;

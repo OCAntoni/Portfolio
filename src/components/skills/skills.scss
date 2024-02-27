@@ -34,6 +34,10 @@
             display: grid;
             grid-template-columns: repeat(3,1fr);
             gap: 40px;
+            animation: none;
+            @media screen and (max-width: 350px) {
+                grid-template-columns: repeat(2,1fr);
+            }
         }
     
         .skills-logo {
