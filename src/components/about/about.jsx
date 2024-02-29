@@ -14,7 +14,7 @@ function About() {
                 />
                 <div className="text-about" style={{ lineHeight: '1.5' }}>
                     <p>
-                        Durant mes précédentes expériences professionelles, j'ai eu l'opportunité d'explorer plusieurs domaines. C'est ce qui me permet d'aborder chaque nouveau projet avec enthousiasme et compréhension, mais également d'une capacité d'écoute empathique, celles ci qui me permettent de comprendre les besoins des autres.
+                        Durant mes précédentes expériences professionelles, j'ai eu l'opportunité d'explorer plusieurs domaines. C'est ce qui me permet d'aborder chaque nouveau projet avec enthousiasme et compréhension, mais également d'une capacité d'écoute empathique. Celles ci me permettent de comprendre les besoins des autres.
                         Mon intérêt pour la tech et l'informatique se traduit par ma passion pour le développement web et la construction de solution digitale.
                     </p>
                     <p>
