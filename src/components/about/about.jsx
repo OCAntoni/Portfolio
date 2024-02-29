@@ -1,6 +1,9 @@
+import { NavLink } from "react-router-dom"
+
 import Img from "../../assets/images/meadow_mountain.webp"
 
 function About() {
+    const url = 'https://cv-antoni-castagne.vercel.app';
     return (
         <section id="about">
             <h2>
@@ -24,11 +27,11 @@ function About() {
                         N'hésitez pas à explorer mon portfolio plus en détails ou à me contacter, je suis toujours ouvert à de nouvelles collaborations ainsi qu'à de nouvelles opportunités.
                     </p>
                     <div className="download">
-                        <a href={process.env.PUBLIC_URL + '/cv_test.pdf'} download="CV_Castagne_Antoni.pdf">
+                        <NavLink to={url} target="_blank" title="lien vers le CV" >
                             <button className="dl-button">
-                                Télécharger CV
+                                Voir mon CV
                             </button>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>
