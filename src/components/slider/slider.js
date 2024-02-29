@@ -74,10 +74,12 @@ function Slider({images}) {
                     <FontAwesomeIcon className={`icon ${isPlaying ? "active-play" : ""}`} icon={faCirclePlay} onClick={togglePlay}  />
                     <FontAwesomeIcon className={`icon ${isPlaying ? "" : "active-stop"}`} icon={faCircleStop} onClick={togglePause} />
                 </div>
-                <button className="button-link-mobile">
-                    En savoir plus
-                    <FontAwesomeIcon className="icon-mobile" icon={faArrowRightLong} />
-                </button>
+                <a href="#works" title="lien vers la section de tous les projets détaillés">
+                    <button className="button-link-mobile">
+                        En savoir plus
+                        <FontAwesomeIcon className="icon-mobile" icon={faArrowRightLong} />
+                    </button>
+                </a>
             </div>
         </section>
      );
