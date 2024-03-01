@@ -4,13 +4,13 @@ import Logo from "../../assets/images/logo2.webp"
 import BannerImg from "../../assets/images/winter_moutain_day2.webp"
 
 function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false); //manage open and close menu
 
     function toggleMenu() {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen(!isMenuOpen); //open menu if it is close or close if it is open
     }
 
-    function closeMenu() {
+    function closeMenu() { //close menu
         setIsMenuOpen(false);
     }
     

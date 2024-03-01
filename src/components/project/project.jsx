@@ -6,14 +6,14 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 function Project() {
-    const [filteredProjects, setFilteredProjects] = useState(dataProjets);
-    const [selectedFilter, setSelectedFilter] = useState('Tous');
+    const [filteredProjects, setFilteredProjects] = useState(dataProjets); //init a local state with all the projects
+    const [selectedFilter, setSelectedFilter] = useState('Tous'); // init an other local state with the basic filter with the character string
 
     const filterProjects = (filter) => {
-        setSelectedFilter(filter);
+        setSelectedFilter(filter); // update state with the valor selected
         if (filter === 'Tous') {
-            setFilteredProjects(dataProjets); 
-        } else {
+            setFilteredProjects(dataProjets); // if tous is selected all projects are displayed
+        } else { // if tous is not selected, use method filter and update local state
             const filtered = dataProjets.filter(project => project.filtre.includes(filter));
             setFilteredProjects(filtered);
         }

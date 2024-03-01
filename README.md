@@ -1,3 +1,22 @@
+# Portfolio V1
+
+Bienvenue sur mon portfolio de développeur ! La version 1 de mon portfolio est maintenant terminée ! 🎉
+J'ai choisi de le réaliser avec React et sass.
+
+# À venir
+
+Dans les prochaines versions, j'ai l'intention d'ajouter de nouvelles fonctionnalités pour améliorer l'expérience utilisateur et rendre mon portfolio encore plus utile et attrayant. Notamment entres autres l'ajout d'une version anglaise ainsi qu'un mode sombre.
+
+# Remerciements
+
+# Contact
+
+Si vous avez des questions, des commentaires ou si vous souhaitez simplement discuter, n'hésitez pas à me contacter :
+Mail : anto.castagne@hotmail.fr
+LinkedIn : Antoni Casatgné
+
+Je suis toujours ouvert aux nouvelles opportunités de collaboration et je serais ravi de discuter de vos idées ou projets.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -15,7 +15,7 @@ time, mark, audio, video, button, select {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family:"Montserrat"; // font de base de tous les éléments + rajouter la 2Nd pour les éléments voulues
+  font-family:"Montserrat";
   vertical-align: baseline;
 }
 
@@ -34,7 +34,6 @@ h3 {
   font-size: 20px;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -42,7 +41,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  // overflow: hidden;
 }
 
 ol, ul {
@@ -66,5 +64,5 @@ table {
 
 a {
   text-decoration: none;
-  color: inherit; /* This makes link colors inherit from its parent */
+  color: inherit;
 }
