@@ -1,6 +1,6 @@
 # Portfolio V1
 
-Bienvenue sur mon portfolio de développeur ! La version 1 de mon portfolio est maintenant terminée ! 🎉
+Bienvenue sur mon portfolio de développeur web ! La version 1 de mon portfolio est maintenant terminée ! 🎉
 J'ai choisi de le réaliser avec React et sass.
 
 # À venir
@@ -8,6 +8,8 @@ J'ai choisi de le réaliser avec React et sass.
 Dans les prochaines versions, j'ai l'intention d'ajouter de nouvelles fonctionnalités pour améliorer l'expérience utilisateur et rendre mon portfolio encore plus utile et attrayant. Notamment entres autres l'ajout d'une version anglaise ainsi qu'un mode sombre.
 
 # Remerciements
+
+Je tiens à exprimer ma sincère gratitude à vous, visiteurs de mon portfolio. Merci d'avoir pris le temps de parcourir mes projets et de découvrir mon travail. Votre intérêt et votre soutien me motive encore plus dans mon travail. 💪
 
 # Contact
 
