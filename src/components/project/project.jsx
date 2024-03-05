@@ -28,7 +28,7 @@ function Project() {
                 <button className={`filter-button ${selectedFilter === 'Tous' ? 'active-color' : ''}`} onClick={() => filterProjects('Tous')}>Tous</button>
                 <button className={`filter-button ${selectedFilter === 'Html/Css' ? 'active-color' : ''}`} onClick={() => filterProjects('Html/Css')}>HTML/CSS</button>
                 <button className={`filter-button ${selectedFilter === 'Javascript' ? 'active-color' : ''}`} onClick={() => filterProjects('Javascript')}>Javascript</button>
-                <button className={`filter-button ${selectedFilter === 'React' ? 'active-color' : ''}`} onClick={() => filterProjects('React')}>React</button>
+                <button className={`filter-button ${selectedFilter === 'ReactJS' ? 'active-color' : ''}`} onClick={() => filterProjects('ReactJS')}>ReactJS</button>
                 <button className={`filter-button ${selectedFilter === 'SEO' ? 'active-color' : ''}`} onClick={() => filterProjects('SEO')}>SEO</button>
                 <button className={`filter-button ${selectedFilter === 'Debug' ? 'active-color' : ''}`} onClick={() => filterProjects('Debug')}>Debug</button>
             </div>
@@ -38,7 +38,7 @@ function Project() {
                     <option value="Tous" className={`filter-button ${selectedFilter === 'Html/Css' ? 'active-color' : ''}`}>Tous</option>
                     <option value="Html/Css" className={`filter-button ${selectedFilter === 'Html/Css' ? 'active-color' : ''}`}>HTML/CSS</option>
                     <option value="Javascript">Javascript</option>
-                    <option value="React">React</option>
+                    <option value="ReactJS">ReactJS</option>
                     <option value="SEO">SEO</option>
                     <option value="Debug">Debug</option>
                 </select>
@@ -71,6 +71,9 @@ function Project() {
                                 </h3>
                                 <p className='info-text' style={{ lineHeight: '1.5' }}>
                                     {project.description}
+                                </p>
+                                <p className='info-text' style={{ lineHeight: '1.5' }}>
+                                    {project.description2}
                                 </p>
                                 <div className='tags'>
                                     {project.tag.map((tag, index) => (

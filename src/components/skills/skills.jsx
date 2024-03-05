@@ -43,7 +43,7 @@ function Skills() {
                         </li>
                         <li>
                             <span className='dot'></span>
-                            consciencieux
+                            Consciencieux
                         </li>
                         <li>
                             <span className='dot'></span>

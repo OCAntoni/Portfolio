@@ -39,6 +39,9 @@
             object-fit:cover;
             border-radius: 5px;
             border: thick double #09B8D9 ;
+            @media screen and (max-width: 600px) {
+                width: 97%;
+            }
         }
 
         .change-project {
@@ -81,6 +84,9 @@
                 justify-content: center;
                 gap: 5px;
                 margin-bottom: 25px;
+                @media screen and (max-width: 600px) {
+                    display: none;
+                }
             }
 
             .dot {
